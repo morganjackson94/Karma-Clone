@@ -5,6 +5,12 @@ html {
 body {
     background-color: LightGray;
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	display: list-item;
 }
 
 div {
@@ -14,6 +20,10 @@ div {
 /*Navigation Section*/
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	z-index: 9999;
 }
 
 .top-navigation > .content {
@@ -95,4 +105,40 @@ div {
 	background-color: red;
 	color: black;
 	cursor: pointer;
+}
+
+/*Cases*/
+
+.cases {
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+
+.cases .devices > li {
+	width: 33.333%;
+	float: left;
+}
+
+.cases .content {
+	margin-top: 7.875rem;
+	color: #1d1e21;
+	text-align: center;
+}
+
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+
+.cases .devices h3 {
+	color: #000;
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+ul.devices {
+	list-style: none;
 }
