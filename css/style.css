@@ -1,9 +1,10 @@
 html {
-	-webkit-font-smoothing: antialiased;
+	
 }
 
 body {
     background-color: LightGray;
+    font-family: 'Arial', sans-serif;
 }
 
 div {
@@ -19,25 +20,24 @@ div {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
-.top-navigation .links > .active {
+.top-navigation .links .active {
 	color: #4c5058;
-	font-weight: 600;
+	font-weight: 500;
 }
 
-:link {
-	/* style */
-}
-:hover {
+.top-navigation .links li:hover {
+	cursor: pointer;
 	color: #4c5058;
 }
 
-.links > li {
+.links li {
 	float: right;
 	display: inline-block;
-	margin-top: 5px;
-	margin-left: 15px;
+	margin-top: 10px;
+	margin-left: 25px;
 	list-style: none;
 	font-family: 'Roboto', sans-serif; 
 	font-size: 16px; 
@@ -46,6 +46,53 @@ div {
 }
 
 .content {
-	padding: 0px 15px;
+	width: 970px;
 	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/*Introduction*/
+
+.introduction {
+	background-image: url('../assets/first-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 bottom;
+	overflow: auto;
+	height: 45.938rem;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+.introduction h1, h3 {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+}
+
+.big-button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	display: block;
+	margin: 0 auto;
+	background-color: orange;
+	font-size: 0.95rem;
+	color: #fff;
+}
+
+.big-button:hover {
+	background-color: red;
+	color: black;
+	cursor: pointer;
 }
