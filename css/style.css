@@ -14,8 +14,9 @@ li {
 }
 
 div {
-    border: 1px solid Chocolate;
+    outline: 1px solid Chocolate;
 }
+
 
 /*Navigation Section*/
 .top-navigation {
@@ -43,8 +44,12 @@ div {
 	color: #4c5058;
 }
 
+.top-navigation .logo {
+	padding-top: 10px;
+}
+
 .links li {
-	float: right;
+	/*float: right;*/
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 25px;
@@ -53,6 +58,10 @@ div {
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
+}
+
+.links {
+	float: right;
 }
 
 .content {
@@ -141,4 +150,27 @@ div {
 
 ul.devices {
 	list-style: none;
+}
+
+/*FOOTER*/
+
+.social {
+	text-align: center;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	background-color: #fff;
+}
+
+.icons {
+	list-style: none;
+	border-radius: 1px
+}
+
+.icons div {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.content h5 {
+	font-size: 0.83rem;
 }
